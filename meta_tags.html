@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="{{theme_url('favicon.png')}}"/>
+
+
+<meta name="generator" content="Teachify LMS v.{{config('app.version')}}" />
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="web page description">
+
+<meta name="author" content="John Doe">
+<meta http-equiv="refresh" content="30">
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<title> @if(! empty($title)) {{$title}} @else {{ get_option('site_title') }} @endif</title>
+
+<!-- all css here -->
+
+<!-- bootstrap v4.3.1 css -->
+<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+
+
+<script type="text/javascript">
+    var pageData = @json(pageJsonData())
+</script>
+
+<script type="text/javascript" href="link.js">
+    
+</script>
+<style>
+  body {background-color: powderblue;}
+ 
+</style>
